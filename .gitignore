@@ -1,5 +1,6 @@
 # VS Code
 
+*.code-workspace
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -17,7 +18,7 @@
 *.log
 honeypot_attempts.log
 
-PHP Dependencies (managed by Composer)
+# PHP Dependencies (managed by Composer)
 
 /vendor/
 
