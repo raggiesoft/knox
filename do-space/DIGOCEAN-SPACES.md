@@ -1,0 +1,2 @@
+# DigitalOcean Space
+This folder houses files that will be housed separate from knox.raggiesoft.com, and will be hosted on my DigitalOcean Spaces block, which is currently located at https://raggiesoft-assets.nyc3.digitaloceanspaces.com but, when completed, will appear to come from https://assets.raggiesoft.com thanks to the magic of DNS and Cloudflare.

@@ -1,0 +1,85 @@
+{
+  "albumTitle": "Sounds of Telsus Minor",
+  "artist": "Knox Ambience",
+  "assetBaseUrl": "https://raggiesoft-assets.nyc3.digitaloceanspaces.com",
+  "artwork": "images/knox-artwork-512.png",
+  "ui": {
+    "albumMode": {
+      "showNextPrev": true,
+      "showVolume": true
+    },
+    "ambientMode": {
+      "showNextPrev": false,
+      "showVolume": false
+    }
+  },
+  "tracks": [
+    {
+      "title": "Ozone and Rot",
+      "sources": {
+        "stream": "music/streaming/ozone_and_rot.ogg",
+        "downloads": {
+          "mp3": "music/downloads/ozone_and_rot.mp3",
+          "ogg": "music/downloads/ozone_and_rot.ogg",
+          "wav": "music/downloads/ozone_and_rot.wav"
+        }
+      }
+    },
+    {
+      "title": "Cross-Way Neon",
+      "sources": {
+        "stream": "music/streaming/cross-way_neon.ogg",
+        "downloads": {
+          "mp3": "music/downloads/cross-way_neon.mp3",
+          "ogg": "music/downloads/cross-way_neon.ogg",
+          "wav": "music/downloads/cross-way_neon.wav"
+        }
+      }
+    },
+    {
+      "title": "The Weave",
+      "sources": {
+        "stream": "music/streaming/the_weave.ogg",
+        "downloads": {
+          "mp3": "music/downloads/the_weave.mp3",
+          "ogg": "music/downloads/the_weave.ogg",
+          "wav": "music/downloads/the_weave.wav"
+        }
+      }
+    },
+    {
+      "title": "The Life-Vein",
+      "sources": {
+        "stream": "music/streaming/the_life-vein.ogg",
+        "downloads": {
+          "mp3": "music/downloads/the_life-vein.mp3",
+          "ogg": "music/downloads/the_life-vein.ogg",
+          "wav": "music/downloads/the_life-vein.wav"
+        }
+      }
+    },
+    {
+      "title": "Ghost Echo",
+      "sources": {
+        "stream": "music/streaming/ghost_echo.ogg",
+        "downloads": {
+          "mp3": "music/downloads/ghost_echo.mp3",
+          "ogg": "music/downloads/ghost_echo.ogg",
+          "wav": "music/downloads/ghost_echo.wav"
+        }
+      }
+    },
+    {
+      "title": "Soul-Cleansing BOOM",
+      "sources": {
+        "stream": "music/streaming/soul-cleansing_boom.ogg",
+        "downloads": {
+          "mp3": "music/downloads/soul-cleansing_boom.mp3",
+          "ogg": "music/downloads/soul-cleansing_boom.ogg",
+          "wav": "music/downloads/soul-cleansing_boom.wav"
+        }
+      }
+    }
+  ]
+}
+
