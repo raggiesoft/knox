@@ -52,7 +52,7 @@ This project utilizes a polyglot microservices architecture hosted primarily on 
 
 ## Repository Structure & Version Control
 
-This project employs **separate Git repositories** for each distinct website component to maintain modularity and ease deployment, hosted under the `raggiesoft` GitHub account:
+**(When Completed)** This project employs **separate Git repositories** for each distinct website component to maintain modularity and ease deployment, hosted under the `raggiesoft` GitHub account:
 
 - `raggiesoft/knox-main`: For `raggiesoftknox.com`
     
