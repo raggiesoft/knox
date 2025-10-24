@@ -1,46 +1,17 @@
-# VS Code
-
-*.code-workspace
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# macOS
-
+# ~~ Operating System Files ~~
 .DS_Store
 .AppleDouble
 .LSOverride
+Thumbs.db
 
-# Log files
+# ~~ IDE & Editor Files ~~
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
 
-*.log
-honeypot_attempts.log
-
-# PHP Dependencies (managed by Composer)
-
-/vendor/
-
-# Environment variables file (never commit secrets)
-
-.env
-.env.local
-.env.*.local
-
-# Temporary files
-
-*.tmp
-*.bak
-*.swp
-
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
+# STS (Spring Tool Suite) / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -49,21 +20,114 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ~~ Language & Build Artifacts ~~
+# Java / Maven / Gradle
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# PHP / Composer
+/vendor/
+
+# Node.js / NPM
+node_modules/
+npm-debug.log
+
+# ~~ Logs & Temporary Files ~~
+*.log
+debug.log
+honeypot_attempts.log
+*.tmp
+*.bak
+*.swp
+
+# Emacs backup files
+*~
+.#*
+
+# ~~ Environment Variables ~~
+# Never commit secrets!
+.env
+.env.local
+.env.*.local
+
+# ~~ WordPress Core & Sensitive Files ~~
+# Ignore the main configuration file (contains secrets!)
+wp-config.php
+
+# Ignore core WordPress directories (Assume WP is installed on server)
+/wp-admin/
+/wp-includes/
+
+# Ignore root WordPress files (except necessary ones like .htaccess if you manage it)
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# ~~ WordPress User Content & Caches ~~
+# Ignore user uploads, backups, caches etc.
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backups/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/wflogs/ # Wordfence logs
+
+# ~~ WordPress Plugins ~~
+# Ignore ALL plugins by default. Manage plugins via Composer or install on server.
+# This prevents committing paid plugin code like WP Dark Mode Ultimate.
+/wp-content/plugins/*
+
+# --- Add EXCLUSIONS for any custom plugins YOU are developing here ---
+# Example: Keep track of 'my-custom-lore-plugin'
+# !/wp-content/plugins/my-custom-lore-plugin/
+
+# ~~ WordPress Themes ~~
+# Ignore ALL themes by default...
+/wp-content/themes/*
+
+# --- ...EXCEPT your custom theme ---
+# Replace 'your-custom-knox-theme' with the actual folder name of your theme.
+!/wp-content/themes/your-custom-knox-theme/
+
+# --- Font Awesome Pro ---
+# If you are using the Font Awesome Kit (embedding the JS in your theme),
+# there are usually no specific files to ignore here.
+# If you DOWNLOADED Font Awesome Pro, uncomment the line below and adjust the path:
+# /wp-content/themes/your-custom-knox-theme/assets/fontawesome-pro/
+
+# ~~ Other ~~
+HELP.md # Example misc file
+
