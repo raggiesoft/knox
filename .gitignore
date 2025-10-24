@@ -112,7 +112,7 @@ xmlrpc.php
 
 # --- Add EXCLUSIONS for any custom plugins YOU are developing here ---
 # Example: Keep track of 'my-custom-lore-plugin'
-# !/wp-content/plugins/my-custom-lore-plugin/
+ !/wp-content/plugins/rs-audio-player/
 
 # ~~ WordPress Themes ~~
 # Ignore ALL themes by default...
@@ -120,7 +120,7 @@ xmlrpc.php
 
 # --- ...EXCEPT your custom theme ---
 # Replace 'your-custom-knox-theme' with the actual folder name of your theme.
-!/wp-content/themes/your-custom-knox-theme/
+!/wp-content/themes/knox-lore/
 
 # --- Font Awesome Pro ---
 # If you are using the Font Awesome Kit (embedding the JS in your theme),
