@@ -1,0 +1,222 @@
+/* main.css
+  This is the single, combined CSS file.
+  Upload this file to your 'cdn/css/' folder.
+*/
+
+/* * 1. VARIABLES
+ * ================== */
+
+:root {
+    font-size: 100%; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    /* Light Mode Palette (Default) */
+    --color-background: #F0F2F1;
+    --color-text: #0F1412;
+    --color-card-bg: #FFFFFF;
+    
+    /* ACCENTS (AAA 7:1 Contrast) */
+    --color-weave-accent: #005A5A;
+    --color-weave-button: #007A7A;
+    --color-axiom-accent: #A8491A;
+    --color-axiom-button: #B85C2F;
+    
+    --focus-outline: 3px solid var(--color-weave-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #0F1412;
+        --color-text: #C5C5C5;
+        --color-card-bg: #1A1F1D;
+        
+        /* ACCENTS (AAA 7:1 Contrast) */
+        --color-weave-accent: #40E0D0;
+        --color-weave-button: #40E0D0;
+        --color-axiom-accent: #FF8A50;
+        --color-axiom-button: #FF8A50;
+        
+        --focus-outline: 3px solid var(--color-weave-accent);
+    }
+}
+
+/* * 2. GLOBAL STYLES
+ * ================== */
+
+/* Per wa-page documentation */
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* Center page content */
+.page-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* * 3. COMPONENT STYLES
+ * ================== */
+
+wa-card {
+    background-color: var(--color-card-bg);
+    --wa-border-color: transparent;
+    border-radius: 8px;
+}
+
+/* Style "The Pact" button */
+wa-button[variant="pact"]::part(base) {
+    background-color: var(--color-weave-button);
+    border-color: var(--color-weave-button);
+    color: var(--color-background);
+}
+wa-button[variant="pact"]::part(base):hover {
+    filter: brightness(1.2);
+}
+
+/* Style "The Port" button */
+wa-button[variant="axiom"]::part(base) {
+    background-color: var(--color-axiom-button);
+    border-color: var(--color-axiom-button);
+    color: var(--color-background);
+}
+wa-button[variant="axiom"]::part(base):hover {
+    filter: brightness(1.2);
+}
+
+/* * 4. HEADER STYLES
+ * ================== */
+
+.site-header {
+  padding-block: 1rem;
+  
+  .brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  
+  .desktop-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .desktop-nav a:hover {
+    color: var(--color-weave-accent);
+  }
+}
+
+.mobile-drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.mobile-drawer-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.mobile-drawer-nav a:hover {
+  background-color: var(--color-card-bg);
+}
+
+/* * 5. HERO STYLES
+ * ================== */
+
+.hero-section {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  /* Add a subtle dark overlay so text is readable */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-block: 0;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 60ch;
+}
+
+/* * 6. CARDS & SECTIONS
+ * ================== */
+
+#core-conflict-title,
+#premise-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+wa-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* * 7. FOOTER STYLES
+ * ================== */
+
+.site-footer {
+  background-color: var(--color-card-bg);
+  padding-block: 2rem;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin-block: 0.25rem;
+  text-align: center;
+}
+
+.site-footer .license-info {
+  color: var(--color-text);
+}
+
+.site-footer a {
+  color: var(--color-weave-accent);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer wa-icon {
+  color: var(--color-text);
+}
+.site-footer wa-icon:hover {
+  color: var(--color-weave-accent);
+}

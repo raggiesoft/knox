@@ -1,0 +1,23 @@
+{
+  "name": "raggiesoft-knox",
+  "version": "1.0.0",
+  "description": "Welcome to the central development hub for the **Knox** narrative universe, created by Michael Ragsdale (raggiesoft). This project encompasses the world-building, future narratives, and the web technologies used to present them.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raggiesoft/knox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raggiesoft/knox/issues"
+  },
+  "homepage": "https://github.com/raggiesoft/knox#readme"
+}
