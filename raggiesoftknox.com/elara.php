@@ -1,19 +1,19 @@
 <?php
-// elara.php - Quick & Dirty Router
+// elara.php - Quick & Dirty Router for raggiesoftknox.com
 
-// Define the root directory for includes
+// Define the root directory for includes and views
 define('ROOT_PATH', __DIR__);
 
-// Get the request URI (e.g., "/about", "/")
+// Get the request URI (e.g., "/pages/about", "/")
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// Simple routing
+// Simple routing based on the URL path
 switch ($request_uri) {
-    case '/': // Let's also make the root URL work
-    case '/pages/':
+    case '/': // Handle the root URL
+    case '/pages/': // Keep this if you want /pages/ to also show home
         $view_to_load = 'pages/home'; // Loads /pages/home.php
         break;
-    
+
     case '/pages/about':
         $view_to_load = 'pages/about'; // Loads /pages/about.php
         break;
@@ -21,20 +21,19 @@ switch ($request_uri) {
     case '/pages/license':
         $view_to_load = 'pages/license'; // Loads /pages/license.php
         break;
-    
-    case '/pages/about/copyright':
-        $view_to_load = 'pages/about/copyright'; // Loads /pages/about/copyright.php
-        break;
-        
+
+    // Add other simple pages here if needed
+
     default:
-        // Handle 404
+        // Handle 404 Not Found
         http_response_code(404);
         $view_to_load = 'error/404'; // Loads /error/404.php
         break;
 }
 
-// Render the page
+// Render the page by including header, view, and footer
+// Note the path construction uses the $view_to_load variable directly
 require_once ROOT_PATH . '/includes/header.php';
-// This line now correctly builds the path you want
-require_once ROOT_PATH . '/' . $view_to_load . '.php';
+require_once ROOT_PATH . '/' . $view_to_load . '.php'; // Dynamic view loading
 require_once ROOT_PATH . '/includes/footer.php';
+
