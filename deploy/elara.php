@@ -61,7 +61,7 @@ require_once ROOT_PATH . '/includes/header.php';
 
 // 2. Conditionally include Sidebar and wrap main content
 //    We start the main content container and row structure here
-echo '<div class="container-fluid flex-grow-1">'; // Use container-fluid for potential full-width sections
+echo '<div class="container-fluid flex-grow-1 d-flex">'; // Use container-fluid for potential full-width sections
 echo '  <div class="row flex-grow-1">'; // Make row fill height
 
 if ($showSidebar && file_exists($currentSidebar)) {

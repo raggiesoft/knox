@@ -1,0 +1,8 @@
+// scss/themes/theme-aerie-hold.scss
+// Compiles the Aerie-Hold theme
+
+// 1. Import the color variables for this theme
+@import '../variables/aerie-hold';
+
+// 2. Import the base Bootstrap override rules
+@import '../base/bootstrap-overrides';

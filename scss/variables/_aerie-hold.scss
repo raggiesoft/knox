@@ -1,0 +1,81 @@
+// scss/variables/_aerie-hold.scss
+// Defines color variables for the Aerie-Hold / Weave theme
+
+// Light Mode (Default) - Greenhouse Mist
+:root {
+  // --- Base Theme Colors ---
+  --bs-body-bg: #F4F7F6;
+  --bs-body-color: #111827;
+  --bs-secondary-color: #4b5563;
+  --bs-border-color: #e5e7eb;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.1);
+  --bs-tertiary-bg: #FFFFFF;
+  --bs-tertiary-color: #111827;
+  // --- Map Narrative Colors ---
+  --bs-primary: #005A5A; // Weave Dark
+  --bs-primary-rgb: 0, 90, 90;
+  --bs-primary-text-emphasis: #FFFFFF;
+  --bs-primary-bg-subtle: #cfe2e2;
+  --bs-primary-border-subtle: #9ec5c5;
+  --bs-warning: #A8491A; // Rust Darker
+  --bs-warning-rgb: 168, 73, 26;
+  --bs-warning-text-emphasis: #FFFFFF;
+  --bs-warning-bg-subtle: #f6e4db;
+  --bs-warning-border-subtle: #ecc9b7;
+  --bs-secondary: #4b5563; // Neutral Grey
+  --bs-secondary-rgb: 75, 85, 99;
+  --bs-secondary-text-emphasis: #FFFFFF;
+  --bs-secondary-bg-subtle: #e5e7eb;
+  --bs-secondary-border-subtle: #d1d5db;
+  // --- Links ---
+  --bs-link-color: var(--bs-primary);
+  --bs-link-color-rgb: var(--bs-primary-rgb);
+  --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 80%, black);
+  // --- Component Defaults ---
+  --bs-navbar-color: var(--bs-secondary-color);
+  --bs-navbar-hover-color: var(--bs-body-color);
+  --bs-navbar-brand-color: var(--bs-body-color);
+  --bs-dropdown-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-link-color: var(--bs-tertiary-color);
+  --bs-dropdown-link-hover-bg: var(--bs-secondary-bg-subtle);
+  --bs-dropdown-border-color: var(--bs-border-color);
+  --bs-card-bg: var(--bs-tertiary-bg);
+  --bs-card-color: var(--bs-body-color);
+  --bs-card-border-color: var(--bs-border-color);
+}
+
+// Dark Mode - Dark Rot & Bioluminescence
+@media (prefers-color-scheme: dark) {
+  :root {
+    // --- Base Theme Colors ---
+    --bs-body-bg: #0F1412;
+    --bs-body-color: #E5E7EB;
+    --bs-secondary-color: #9ca3af;
+    --bs-border-color: #4b5563;
+    --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+    --bs-tertiary-bg: #1A1F1D; // dark-weave
+    --bs-tertiary-color: #E5E7EB;
+    // --- Map Narrative Colors ---
+    --bs-primary: #40E0D0; // Weave Light / Glimmer Moss
+    --bs-primary-rgb: 64, 224, 208;
+    --bs-primary-text-emphasis: #0F1412;
+    --bs-primary-bg-subtle: #1a2f2d;
+    --bs-primary-border-subtle: #2d5854;
+    --bs-warning: #FF8A50; // Rust Light
+    --bs-warning-rgb: 255, 138, 80;
+    --bs-warning-text-emphasis: #0F1412;
+    --bs-warning-bg-subtle: #331f15;
+    --bs-warning-border-subtle: #663c27;
+    --bs-secondary: #6b7280; // Neutral Grey
+    --bs-secondary-rgb: 107, 114, 128;
+    --bs-secondary-text-emphasis: #FFFFFF;
+    --bs-secondary-bg-subtle: #2d3748;
+    --bs-secondary-border-subtle: #4a5568;
+    // --- Links ---
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 80%, white);
+    // --- Component Defaults (Dark) ---
+    // Variables cascade from light mode unless overridden here
+  }
+}

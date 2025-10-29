@@ -1,0 +1,105 @@
+/* /assets/css/theme-aerie-hold.css */
+/* Defines color variables for the Aerie-Hold / Weave theme */
+
+/* Light Mode (Default) - Greenhouse Mist */
+:root {
+  /* --- Base Theme Colors --- */
+  --bs-body-bg: #F4F7F6;           /* Light Misty Green */
+  --bs-body-color: #111827;        /* dark-text (gray-900) */
+  --bs-secondary-color: #4b5563;   /* Muted text (gray-600) */
+  --bs-border-color: #e5e7eb;      /* gray-200 */
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.1);
+
+  /* Card/Tertiary Backgrounds */
+  --bs-tertiary-bg: #FFFFFF;      /* White (card bg, default navbar bg) */
+  --bs-tertiary-color: #111827;    /* dark-text (gray-900) */
+
+  /* --- Map Narrative Colors --- */
+  /* Primary (Pact / Weave) */
+  --bs-primary: #005A5A;           /* accent-weave-dark */
+  --bs-primary-rgb: 0, 90, 90;
+  --bs-primary-text-emphasis: #FFFFFF;
+  --bs-primary-bg-subtle: #cfe2e2;
+  --bs-primary-border-subtle: #9ec5c5;
+
+  /* Warning (Axiom / Port / Rust) */
+  --bs-warning: #A8491A;           /* accent-rust-darker */
+  --bs-warning-rgb: 168, 73, 26;
+  --bs-warning-text-emphasis: #FFFFFF;
+  --bs-warning-bg-subtle: #f6e4db;
+  --bs-warning-border-subtle: #ecc9b7;
+
+  /* Secondary (Neutral / Grey) */
+  --bs-secondary: #4b5563;         /* gray-600 */
+  --bs-secondary-rgb: 75, 85, 99;
+  --bs-secondary-text-emphasis: #FFFFFF;
+  --bs-secondary-bg-subtle: #e5e7eb;
+  --bs-secondary-border-subtle: #d1d5db;
+
+  /* Link color */
+  --bs-link-color: var(--bs-primary);
+  --bs-link-color-rgb: var(--bs-primary-rgb);
+  --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 80%, black);
+
+  /* --- Component Specific Variables (Defaults based on theme) --- */
+  --bs-navbar-color: var(--bs-secondary-color);
+  --bs-navbar-hover-color: var(--bs-body-color);
+  --bs-navbar-brand-color: var(--bs-body-color); /* Added default brand color */
+  --bs-dropdown-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-link-color: var(--bs-tertiary-color);
+  --bs-dropdown-link-hover-bg: var(--bs-secondary-bg-subtle);
+  --bs-dropdown-border-color: var(--bs-border-color);
+  --bs-card-bg: var(--bs-tertiary-bg);
+  --bs-card-color: var(--bs-body-color);
+  --bs-card-border-color: var(--bs-border-color);
+}
+
+/* Dark Mode - Dark Rot & Bioluminescence */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --- Base Theme Colors --- */
+    --bs-body-bg: #0F1412;
+    --bs-body-color: #E5E7EB;
+    --bs-secondary-color: #9ca3af;
+    --bs-border-color: #4b5563;
+    --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+
+    /* Card/Tertiary Backgrounds */
+    --bs-tertiary-bg: #1A1F1D; /* dark-weave */
+    --bs-tertiary-color: #E5E7EB;
+
+    /* --- Map Narrative Colors --- */
+    /* Primary (Pact / Weave / Glimmer Moss) */
+    --bs-primary: #40E0D0; /* accent-weave-light */
+    --bs-primary-rgb: 64, 224, 208;
+    --bs-primary-text-emphasis: #0F1412;
+    --bs-primary-bg-subtle: #1a2f2d;
+    --bs-primary-border-subtle: #2d5854;
+
+    /* Warning (Axiom / Port / Rust) */
+    --bs-warning: #FF8A50; /* accent-rust-light */
+    --bs-warning-rgb: 255, 138, 80;
+    --bs-warning-text-emphasis: #0F1412;
+    --bs-warning-bg-subtle: #331f15;
+    --bs-warning-border-subtle: #663c27;
+
+    /* Secondary (Neutral / Grey) */
+    --bs-secondary: #6b7280; /* gray-500 */
+    --bs-secondary-rgb: 107, 114, 128;
+    --bs-secondary-text-emphasis: #FFFFFF;
+    --bs-secondary-bg-subtle: #2d3748;
+    --bs-secondary-border-subtle: #4a5568;
+
+    /* Link color */
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 80%, white);
+
+    /* --- Component Specific Variables (Dark Mode) --- */
+    /* Define overrides if needed, otherwise defaults from light mode cascade */
+    /* Example: If navbar color needed specific dark mode override: */
+    /* --bs-navbar-color: var(--bs-secondary-color); */
+    /* --bs-navbar-brand-color: var(--bs-body-color); */ /* Already covered by rule below, but could be defined here */
+
+  }
+}
