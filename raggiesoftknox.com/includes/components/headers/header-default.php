@@ -1,9 +1,9 @@
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
   <li class="nav-item">
-    <a class="nav-link text-primary" href="https://pact.raggiesoftknox.com/">The Pact</a>
+    <a class="nav-link text-primary" href="/concepts/pact/">The Pact</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-warning" href="https://port.raggiesoftknox.com/">The Port</a>
+    <a class="nav-link text-warning" href="/concepts/port/">The Port</a>
   </li>
   <li class="nav-item">
     <a class="nav-link text-secondary" href="https://lore.raggiesoftknox.com/">The Lore Bible</a>

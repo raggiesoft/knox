@@ -46,7 +46,7 @@
             'title' => 'The Pact',
             'description' => 'Follow the story of Anya, Kael, and Pip. From their hidden village, they wage a secret war of sabotage against the corporation that hunts them.',
             'buttonProps' => [
-              'href' => 'https://pact.raggiesoftknox.com/',
+              'href' => '/concepts/pact/',
               'text' => 'Read The Pact',
               'variant' => 'pact', // -> maps to btn-primary
               'icon' => 'fa-solid fa-leaf',
@@ -66,7 +66,7 @@
             'title' => 'The Port',
             'description' => 'Experience the narrative from inside the Axiom. Follow the Auditors, Agents, and Whispers trying to enforce corporate law in a Green Hell.',
             'buttonProps' => [
-              'href' => 'https://port.raggiesoftknox.com/',
+              'href' => '/concepts/port/',
               'text' => 'Enter The Port',
               'variant' => 'axiom', // -> maps to btn-warning
               'icon' => 'fa-solid fa-industry',

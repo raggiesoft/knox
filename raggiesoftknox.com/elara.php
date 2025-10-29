@@ -3,6 +3,12 @@
 define('ROOT_PATH', __DIR__);
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
+// Sanitize the request URI:
+// Remove trailing slash if it exists and it's not the root path "/"
+if (strlen($request_uri) > 1) {
+    $request_uri = rtrim($request_uri, '/');
+}
+
 // --- SET DEFAULTS ---
 $siteName = 'Knox: A Narrative Universe'; // Define base site name
 $pageTitle = $siteName; // Default title is just the site name
@@ -32,6 +38,16 @@ switch ($request_uri) {
         $view_to_load = 'pages/license';
         $pageTitle = 'License Information - ' . $siteName; // <<< SET PAGE TITLE
         break;
+
+        // Page Routes for Concepts
+    case '/concepts/pact':
+        $view_to_load = 'pages/concepts/pact';
+        $pageTitle = 'The Pact, Anya, Kael, and Pip - ' . $siteName; // <<< SET PAGE TITLE
+        break;
+    case '/concepts/port':
+        $view_to_load = 'pages/concepts/port';
+        $pageTitle = 'Port Telsus: The Axiom - ' . $siteName; // <<< SET PAGE TITLE
+        break;
 }
 
 // Handle dynamic chapter route if no static route was found
@@ -43,7 +59,7 @@ if ($view_to_load === null) {
         $pageTitle = 'Chapter: ' . htmlspecialchars(ucwords(str_replace('-', ' ', $params['slug']))) . ' - ' . $siteName; // <<< SET PAGE TITLE
     } else {
         http_response_code(404);
-        $view_to_load = 'error/404';
+        $view_to_load = 'errors/404';
         $pageTitle = 'Page Not Found - ' . $siteName; // <<< SET PAGE TITLE
         $showSidebar = false;
     }

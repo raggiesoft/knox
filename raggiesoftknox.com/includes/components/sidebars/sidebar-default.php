@@ -19,18 +19,18 @@
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">External Links</h6>
 <ul class="nav flex-column mb-2">
    <li class="nav-item">
-    <a class="nav-link link-secondary" href="https://pact.raggiesoftknox.com/" target="_blank">
-        <i class="fa-solid fa-leaf me-2"></i>The Pact <i class="fa-solid fa-external-link-alt fa-xs ms-1"></i>
+    <a class="nav-link link-secondary" href="/concepts/pact" target="_blank">
+        <i class="fa-solid fa-leaf me-2"></i>The Pact
     </a>
    </li>
    <li class="nav-item">
-    <a class="nav-link link-secondary" href="https://port.raggiesoftknox.com/" target="_blank">
-      <i class="fa-solid fa-industry me-2"></i>The Port <i class="fa-solid fa-external-link-alt fa-xs ms-1"></i>
+    <a class="nav-link link-secondary" href="/concepts/port" target="_blank">
+      <i class="fa-solid fa-industry me-2"></i>The Port
     </a>
    </li>
    <li class="nav-item">
     <a class="nav-link link-secondary" href="https://lore.raggiesoftknox.com/" target="_blank">
-     <i class="fa-solid fa-book-journal-whills me-2"></i>Lore Bible <i class="fa-solid fa-external-link-alt fa-xs ms-1"></i>
+     <i class="fa-solid fa-book-journal-whills me-2"></i>Lore Bible
     </a>
    </li>
 </ul>
